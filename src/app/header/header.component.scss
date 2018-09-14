@@ -1,3 +1,5 @@
+@import '../../scss/config';
+
 a{
     color: white;
     text-decoration: none;
@@ -8,4 +10,48 @@ a{
     z-index: 2;
     width: 100%; 
 
+}   
+
+
+.menu-btn{
+    position: fixed;
+    top:35px;
+    right:35px;
+    cursor: pointer;
+    @include easeOut;
+    z-index: 3;
+
+    .btn-line{
+        width: 28px;
+        height: 3px;
+        margin-bottom: 5px;
+        background: white;
+        @include easeOut;
+    }
+
+    // rotater into X
+    &.close{
+        transform: rotate(180deg);
+
+        .btn-line{
+            // line 1 rotate
+            &:nth-child(1){
+                transform: rotate(45deg) translate(5px,5px);
+            }
+
+            // line 2 hide
+             &:nth-child(2){
+                opacity: 0;
+            }
+
+
+            // line 3 rotate
+
+             &:nth-child(3){
+                transform: rotate(-45deg) translate(7px,-6px);
+            }
+
+        }
+    }
+  
 }
