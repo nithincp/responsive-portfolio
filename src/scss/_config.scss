@@ -3,6 +3,8 @@ $show-home-image:true;
 $home-image: url('img/manutd_wallpaper.jpg');
 $background-opacity: 0.8;
 $overlay-color:black;
+$secondary-color:#eece1a;
+
 
 @mixin background {
     @if $show-home-image{
