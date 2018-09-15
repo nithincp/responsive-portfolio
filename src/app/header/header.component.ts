@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
     const menuNav = document.querySelector('.menu-nav');
     const menuBranding = document.querySelector('.menu-branding');
 
-    const navItems  = document.querySelectorAll('.nav-item');
+    const navItems  = Array.from(document.querySelectorAll('.nav-item'));
 
 
     // initial state of the menu

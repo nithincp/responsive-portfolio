@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { MainComponent } from './main/main.component';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nithin-portfolio';
+
 }

@@ -13,7 +13,7 @@ import { MainComponent } from './main/main.component';
   ],
   imports: [
     BrowserModule
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
