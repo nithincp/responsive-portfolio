@@ -4,10 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-
-
-
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -16,10 +13,11 @@ import { AboutMeComponent } from './about-me/about-me.component';
     AppComponent,
     HeaderComponent,
     MainComponent,
-    AboutMeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
+
     ],
   providers: [],
   bootstrap: [AppComponent]
