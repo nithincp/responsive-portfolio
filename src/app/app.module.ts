@@ -1,10 +1,12 @@
+import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './/app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -12,13 +14,14 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HeaderComponent,
-    MainComponent,
+      MainComponent,
+    AboutMeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
 
-    ],
+ ],
   providers: [],
   bootstrap: [AppComponent]
 })

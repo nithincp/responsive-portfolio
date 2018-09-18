@@ -1,5 +1,16 @@
 @import '../../scss/config';
 
+@import '../../styles-variables';
+
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+
+@import '../../scss/mobile';
+
+
+
+
+
 a{
     color: white;
     text-decoration: none;
@@ -72,7 +83,7 @@ a{
          display: flex;
          flex-flow: column wrap;
          justify-content: center;
-         align-content: center;
+        align-content: center;
          float: left;
          width:50%;
          height:100vh;
@@ -108,18 +119,21 @@ a{
             transform: translate3d(0,0,0);
         }
        
+
+       
+
        .portrait{
-            display: block;
+            display: flex;
             margin-left: auto;
             margin-right: auto;
             width: 250px;
-            height:250px;
+            height: 250px;
             background: url(../../img/my_portrait.jpg);
             border-radius: 50%;
             border: solid 3px $secondary-color;
             //opacity: 1;
         }
-
+    
     }
 
     .nav-item{

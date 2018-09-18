@@ -1,31 +1,35 @@
-import { MainComponent } from './main/main.component';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
-import { ModuleWithProviders } from '@angular/core';
-
-
-
+import { MainComponent } from './main/main.component';
+import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
 
-  // {path: '', component: HeaderComponent}
-   { path: '', component: MainComponent}
-  // { path: 'aboutMe', component: AboutMeComponent }
+
+  { path: '', component: MainComponent},
+
+
+  { path: '', component: HeaderComponent, outlet: 'header'  },
+
+  { path: 'aboutMe', component: AboutMeComponent}
+
+
+
+
+
 
 
 
 ];
 
-// const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
-
 @NgModule({
   imports: [
-  RouterModule.forRoot(appRoutes)
+     RouterModule.forRoot(
+      appRoutes)
   ],
 
-    exports: [RouterModule]
-
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }

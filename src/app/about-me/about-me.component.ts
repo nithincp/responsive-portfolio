@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';      // Add this
+import { NgModule } from '@angular/core';
+
 
 
 @Component({
