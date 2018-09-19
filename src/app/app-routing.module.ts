@@ -4,6 +4,10 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { RouterModule, Routes } from '@angular/router';
+import { WorkComponent } from './work/work.component';
+
+
+
 
 const appRoutes: Routes = [
 
@@ -13,7 +17,12 @@ const appRoutes: Routes = [
 
   { path: '', component: HeaderComponent, outlet: 'header'  },
 
-  { path: 'aboutMe', component: AboutMeComponent}
+  { path: 'aboutMe', component: AboutMeComponent },
+
+  { path: 'work', component: WorkComponent },
+
+
+
 
 
 

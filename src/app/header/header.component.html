@@ -14,7 +14,7 @@
 
  <ul class="menu-nav">
     <li class="nav-item current">
-      <a href="../app.component.html" class="nav-link">
+      <a routerLink="" class="nav-link" (click)="toggleMenu()">
         Home
       </a>
     </li>
@@ -26,13 +26,13 @@
     </li>
 
    <li class="nav-item">
-      <a href="/work.html" class="nav-link">
+      <a routerLink="work" class="nav-link" (click)="toggleMenu()">
         My Work
       </a>
     </li>
 
     <li class="nav-item">
-      <a href="/contact.html" class="nav-link">
+      <a routerLink="aboutMe" class="nav-link" (click)="toggleMenu()">
         How To Reach Me
       </a>
     </li>

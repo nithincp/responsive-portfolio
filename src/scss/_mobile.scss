@@ -73,6 +73,20 @@
 
 }
 
+.about{
+
+        align-items: center;
+        text-align: center;    
+
+.about-info{
+     grid-template-areas: 
+    'bioimage'
+    'bio';
+    grid-template-columns: 1fr;
+
+}
+
+}
     
 }
 
