@@ -1,8 +1,19 @@
 @import '../../styles-variables';
 
+@import '../../styles-variables';
+@import '../../scss/config';
+
+@import '../main/main.component.scss';
+
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+
+@import '../../scss/mobile';
 
 
-.heading{
-    color: white;
-    font-size: 70px;
+
+.work{
+
+        padding: 60px;
+
 }

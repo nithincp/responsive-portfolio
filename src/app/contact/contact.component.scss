@@ -1,0 +1,46 @@
+@import '../../styles-variables';
+@import '../../scss/config';
+
+@import '../main/main.component.scss';
+
+@import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+
+@import '../../scss/mobile';
+
+
+.contact{
+        padding: 60px;
+
+
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div{
+         text-align-last: center;
+        font-size: 2rem;
+        color: white;
+        padding: 1.5rem 2rem;
+        margin-bottom: 1rem;
+        border: 3px white solid;
+        @include easeOut;
+
+        &:hover{
+            padding: 0.5rem 1.5rem;
+            background-color: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color:set-text-color($primary-color);
+            }
+        }
+
+    }
+
+}
+
+}
