@@ -69,3 +69,10 @@ $secondary-color:#eece1a;
         @content;
     }
 }
+
+@mixin mediaLandscape {
+    @media screen and (orientation:landscape) {
+        @content;
+     }
+
+}
