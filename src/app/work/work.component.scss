@@ -3,12 +3,11 @@
 @import '../../styles-variables';
 @import '../../scss/config';
 
-@import '../main/main.component.scss';
 
 @import '../../../node_modules/bootstrap/scss/bootstrap-grid.scss';
 @import '../../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
 
-@import '../../scss/mobile';
+@import '../main/main.component.scss';
 
 
 
@@ -17,3 +16,4 @@
         padding: 60px;
 
 }
+

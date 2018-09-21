@@ -1,6 +1,6 @@
 $primary-color:grey;
 $show-home-image:true;
-$home-image: url('/src/img/DSC_0291.JPG');
+//$home-image: url('/src/assets/img/DSC_0291.JPG');
 $background-opacity: 0.8;
 $overlay-color:black;
 $secondary-color:#eece1a;
@@ -9,7 +9,7 @@ $secondary-color:#eece1a;
 @mixin background {
     @if $show-home-image{
         &#bg-img{
-            background: $home-image;   
+            background: url(/assets/img/DSC_0291.JPG);  
             background-attachment: fixed;
             //background-size: cover; 
 
